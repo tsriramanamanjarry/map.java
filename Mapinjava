@@ -1,0 +1,38 @@
+package set;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class sample {
+
+	public static void main(String[] args) {
+		Map<String,Integer> s = new HashMap<>();
+		s.put("jimin",10);
+		s.put("jk",20);
+		s.put("j-hope",40);
+		s.put("jin",30);
+		System.out.println(s.containsValue(30));
+		System.out.println(s.containsKey("jimin"));
+		System.out.println(s.equals(10));
+		System.out.println(s.isEmpty());
+		System.out.println(s.size());
+		System.out.println(s.remove("jin",30));
+		System.out.println(s);
+		Set<Entry<String, Integer>> phone= s.entrySet();
+		 
+		 for( Entry<String,Integer> p : phone)
+		System.out.println(p);
+		 Collection val= s.values();
+			System.out.println(val);
+			Collection val1= s.keySet();
+			System.out.println(val1);
+		
+	}
+
+}
